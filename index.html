@@ -31,7 +31,7 @@
       </div>
       
       <div>
-        <p>Gender: </p>
+        <label>Gender: </label>
         <input type="radio" name="gender_field" value="Male">
         <label>Male</label>
         <input type="radio" name="gender_field" value="Female">
@@ -55,7 +55,6 @@
     <legend>My Avaliablity</legend>
     <fieldset>
       <p>Days Avaliable: </p>
-      <div>
           <div>
             <input type="checkbox" name="available_field[]" value="Sunday">
             <label>Sunday</label>
@@ -84,10 +83,11 @@
             <input type="checkbox" name="available_field[]" value="Saturday">
             <label>Saturday</label>
           </div>
-      </div>
       
       <div>
-        <label>Any Comments?</label>
+        <div>
+          <label>Any Comments?</label>
+        </div>
           <div>
             <textarea name="comments_field" placeholder="Leave any additional comments here"></textarea>
           </div>
