@@ -4,12 +4,13 @@
   <meta charset="UTF-8">
   <title>ITMD-361 Lab 4 Volunteer Form</title>
 </head>
+  
 <body>
   <header>
-    <h1>Bolunteer Form</h1>
+    <h1>Volunteer Form</h1>
   </header>
+  
   <form method="POST" action="http://bloomingdale.sat.iit.edu/kriedan/lab3formscript.php">
-    
     <fieldset>
     <legend>My Info</legend>
       
@@ -53,7 +54,6 @@
     
     <legend>My Avaliablity</legend>
     <fieldset>
-      
       <p>Days Avaliable: </p>
       <div>
         <input type="checkbox" name="available_field[]" value="Sunday">
@@ -72,8 +72,16 @@
         <label>Saturday</label>
       </div>
       
-      
+      <div>
+        <label>Any Comments?</label>
+          <textarea name="comments_field" placeholder="Leave any additional comments here"></textarea>
+      </div>
     </fieldset>
+    
+    <div>
+      <input type="hidden" name="hidden_field" value="aqiao">
+    </div>
+    <input type="submit" value="Send Me">
     
   </form>
 </body>
